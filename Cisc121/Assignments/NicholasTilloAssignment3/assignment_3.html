@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module assignment_3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>assignment_3</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cpacma%5Conedrive%5Cdesktop%5Ccisc121%5Cassignments%5Cnicholastilloassignment3%5Cassignment_3.py">c:\users\pacma\onedrive\desktop\cisc121\assignments\nicholastilloassignment3\assignment_3.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="glob.html">glob</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="tkinter.html">tkinter</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-browse_button"><strong>browse_button</strong></a>()</dt><dd><tt>Asks&nbsp;the&nbsp;user&nbsp;for&nbsp;a&nbsp;directory&nbsp;and&nbsp;then&nbsp;outputs&nbsp;it&nbsp;into&nbsp;a&nbsp;text&nbsp;box</tt></dd></dl>
+ <dl><dt><a name="-compare_button"><strong>compare_button</strong></a>()</dt><dd><tt>The&nbsp;main&nbsp;function,&nbsp;creates&nbsp;a&nbsp;secondary&nbsp;window,&nbsp;uses&nbsp;the&nbsp;selected&nbsp;<br>
+directory&nbsp;to&nbsp;gathter&nbsp;the&nbsp;text&nbsp;files&nbsp;within&nbsp;it.&nbsp;Then&nbsp;compared&nbsp;them&nbsp;to<br>
+each&nbsp;other&nbsp;and&nbsp;outputs&nbsp;the&nbsp;book,&nbsp;recommendation,&nbsp;and&nbsp;the&nbsp;Jaccard&nbsp;number<br>
+in&nbsp;a&nbsp;table&nbsp;on&nbsp;the&nbsp;secondary&nbsp;window.</tt></dd></dl>
+ <dl><dt><a name="-create_dictionary"><strong>create_dictionary</strong></a>(list_files)</dt><dd><tt>Takes&nbsp;a&nbsp;list&nbsp;of&nbsp;files&nbsp;and&nbsp;creates&nbsp;a&nbsp;dictionary,&nbsp;the&nbsp;value&nbsp;being&nbsp;a&nbsp;<br>
+tuple,&nbsp;the&nbsp;first&nbsp;value&nbsp;being&nbsp;the&nbsp;most&nbsp;similar&nbsp;book,&nbsp;the&nbsp;second&nbsp;value&nbsp;being<br>
+the&nbsp;Jaccard&nbsp;value</tt></dd></dl>
+ <dl><dt><a name="-create_list_of_files"><strong>create_list_of_files</strong></a>(directory_list)</dt><dd><tt>Takes&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;directory&nbsp;names&nbsp;and&nbsp;returns&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;opened&nbsp;<br>
+files</tt></dd></dl>
+ <dl><dt><a name="-create_set_book"><strong>create_set_book</strong></a>(cfile)</dt><dd><tt>Inputs&nbsp;a&nbsp;file,&nbsp;iterates&nbsp;through&nbsp;the&nbsp;lines,&nbsp;and&nbsp;words,&nbsp;taking&nbsp;out&nbsp;all<br>
+stop&nbsp;words,&nbsp;all&nbsp;words&nbsp;that&nbsp;occur&nbsp;less&nbsp;than&nbsp;5&nbsp;times,&nbsp;and&nbsp;words&nbsp;with&nbsp;less<br>
+than&nbsp;3&nbsp;letters.</tt></dd></dl>
+ <dl><dt><a name="-create_set_dictonary"><strong>create_set_dictonary</strong></a>(list_of_files)</dt><dd><tt>Takes&nbsp;a&nbsp;set&nbsp;of&nbsp;files&nbsp;and&nbsp;gets&nbsp;a&nbsp;set&nbsp;of&nbsp;words&nbsp;for&nbsp;each&nbsp;one,&nbsp;putting&nbsp;it&nbsp;<br>
+into&nbsp;a&nbsp;dictionary</tt></dd></dl>
+ <dl><dt><a name="-create_stop_words"><strong>create_stop_words</strong></a>()</dt><dd><tt>Opens&nbsp;the&nbsp;file&nbsp;stop&nbsp;words&nbsp;and&nbsp;creates&nbsp;a&nbsp;set&nbsp;of&nbsp;useable&nbsp;words</tt></dd></dl>
+ <dl><dt><a name="-find_set_comparibility"><strong>find_set_comparibility</strong></a>(book1, book2)</dt><dd><tt>Takes&nbsp;two&nbsp;files&nbsp;and&nbsp;uses&nbsp;the&nbsp;Jaccard&nbsp;equation&nbsp;to&nbsp;return&nbsp;a&nbsp;value</tt></dd></dl>
+ <dl><dt><a name="-get_letters"><strong>get_letters</strong></a>(s)</dt><dd><tt>Inputs&nbsp;a&nbsp;word(string),&nbsp;and&nbsp;removes&nbsp;all&nbsp;non&nbsp;letters&nbsp;and&nbsp;makes&nbsp;it&nbsp;lowercase</tt></dd></dl>
+ <dl><dt><a name="-open_button"><strong>open_button</strong></a>()</dt><dd><tt>Takes&nbsp;the&nbsp;text&nbsp;from&nbsp;the&nbsp;the&nbsp;chosen&nbsp;directory&nbsp;and&nbsp;takes&nbsp;the&nbsp;names&nbsp;<br>
+outputting&nbsp;in&nbsp;a&nbsp;list&nbsp;to&nbsp;another&nbsp;text&nbsp;box.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>CENTER</strong> = 'center'<br>
+<strong>__warningregistry__</strong> = {'version': 0}<br>
+<strong>book_file</strong> = &lt;_io.TextIOWrapper name='Assignments/NicholasTil...ignment3/Jane_Eyre.txt' mode='r' encoding='utf8'&gt;<br>
+<strong>button</strong> = &lt;tkinter.Button object .!button&gt;<br>
+<strong>compare_button_1</strong> = &lt;tkinter.Button object .!button3&gt;<br>
+<strong>open_button_1</strong> = &lt;tkinter.Button object .!button2&gt;<br>
+<strong>set_stopwords</strong> = {'a', 'about', 'above', 'after', 'again', 'against', ...}<br>
+<strong>stop_words</strong> = &lt;_io.TextIOWrapper name='Assignments/NicholasTil...ment3/stop_words.txt' mode='r' encoding='cp1252'&gt;<br>
+<strong>text_1</strong> = &lt;tkinter.Text object .!text&gt;<br>
+<strong>text_1_text</strong> = 'This is where your chosen directory will show up'<br>
+<strong>text_2</strong> = &lt;tkinter.Text object .!text2&gt;<br>
+<strong>text_2_text</strong> = 'This is where the files within the chosen directory will show up'<br>
+<strong>text_3</strong> = &lt;tkinter.Text object .!text3&gt;<br>
+<strong>window</strong> = &lt;tkinter.Tk object .&gt;</td></tr></table>
+</body></html>
