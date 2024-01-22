@@ -1,0 +1,38 @@
+ER Diagram (Project Part 1) [CLO1][CLO4]
+
+
+Instructions
+Property Rental Database
+In cooperation with the City of Kingston, this assignment you will draw an entity-relationship diagram to keep track of rental properties, owners and students interested in renting properties.
+
+This project will be continued in subsequent assignments (3 parts total; the ER diagram, the implementation in a relational database, and a web application and demo of the application).  
+
+Your database will store information as outlined below:
+
+Rental properties are classified as "house", "apartment" or "room".  All rental properties have an address (street, city, province and postal code and apartment number (if applicable)), number of bedrooms, number of bathrooms, parking (yes or no) and an indication of whether there is ensuite laundry or shared laundry.  The date of the property listing will be stored. We will also note whether or not the rental property is accessible. The cost per month will also be stored.  In our database, each rental property will have a unique integer ID.
+For houses, we store whether or not there is a fenced yard and whether the house is detached or a semi (attached to another house). 
+For apartments we will indicate what floor the apartment is on, and whether or not there is an elevator in the building.
+For rooms, we will indicate how many others will be living in the shared space and whether or not kitchen privileges are provided (yes or no).  Rooms often come furnished.  We will keep track of the list of furnishings each room has (for instance, a bed, a desk, a lamp, a chair etc).
+All people in our database will be assigned a unique identifier which consists of two letters and 3 numbers -- for example "CR123".
+All rental properties have an owner associate with them.  Owners may own many properties and each property may be owned by more than one person.  Each owner has a first and last name and a (unique) phone number.
+We store renter's first and last name and  phone number.  All the renters in this database are students. We store their student ID, their expected year of graduation and their program of study.  
+Since students are often searching for properties together, our database will consist of the notion of "rental group" consisting of one or more students.  Each rental group will be identified by a 4 digit code such as 0432 or 4893.  All renters belong to one and only one group. 
+Groups of renters are looking for properties with a preferred set of characteristics - type of accommodation (house, apartment, room), # bedrooms, #bathrooms, parking, laundry, max they wish to pay and accessibility.  We will assume that they are interested in only one type of accommodation (house, apartment or room).  Renters may or may not specify their preferences but if they have specified their preferences, these will be stored.
+Some properties, in addition to the owner, may have a property manager.  We store the property manager's first and last name and a unique phone number.  All property managers manage at least one property but they may manage many.  We keep track of the year that they started managing each property.
+Once a rental agreement has been signed by a group of renters for a particular property we will note the date that the lease was signed as well as the end date of the lease as well as the total monthly rent for the property.  Of course, we keep track of who is renting which property.
+Show both the cardinality of the relationships (use the 1:1, 1:N, N:M notation on the lines) and the participation constraints. Do NOT include any extra information than is given above to illustrate the above database. For each entity, underline the key you would pick to be the primary key (if it is a weak entity, remember to use a dashed underline). If it will be a composite key, underline all attributes that will make up the composite key.
+
+You must use the notation shown in the class.  Other notations will NOT be accepted nor marked. Do NOT use UML-like notation.  Entities should be shown as boxes, attributes as ovals etc. 
+
+You may hand draw your diagrams as long as the image that you submit (a single image) can be clearly viewed.  If you hand in multiple images or images that cannot be clearly read, your project will not be marked.
+
+You might consider using draw.io or even PowerPoint for doing your diagrams. 
+
+
+What to Submit
+Submit the ER diagram in either .pdf or .jpg format.  It must be submitted as a single document!  You can screenshot if you wish or take a picture, but your submission MUST be legible.  
+
+If you have made assumptions for things not included in the requirements, include a list of assumptions along with your ER diagram.
+
+Extensions
+A 24 hour extension is available to everyone.  You do not need to ask. Beyond this, no extensions are given.  Submissions handed in late receive a mark of zero.
